@@ -27,6 +27,69 @@
         padding: 15px;
         margin-bottom: 20px;
       }
+
+      #card {
+        width: 360px;
+        min-height: 460px;
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url("./rockstar.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border: 1px solid #2b2b2b;
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      #card:hover {
+        transform: translateY(-6px);
+        border-color: #ffffff;
+      }
+
+      #card h1 {
+        font-size: 28px;
+        line-height: 1.1;
+        margin: 0 0 12px;
+        text-transform: uppercase;
+      }
+
+      #card p {
+        color: #dddddd;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0 0 22px;
+      }
+
+      #card button {
+        background-color: #fcaf17;
+        color: #111111;
+        border: 0;
+        border-radius: 4px;
+        padding: 12px 18px;
+        width: fit-content;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      #card button:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
     </style>
   </head>
   <body>
@@ -103,6 +166,11 @@
 
     <!-- Div Tag (generic tag) -->
 
-    <div></div>
+    <!-- Create Card -->
+    <div id="card">
+      <h1>Grand Theft Auto</h1>
+      <p>Explore a bold open world packed with action, fast cars, big missions, and unforgettable Rockstar style.</p>
+      <button>Learn More</button>
+    </div>
   </body>
 </html>
